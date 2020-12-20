@@ -1,0 +1,14 @@
+version: "3"
+  services:
+
+    admin:
+      image: admin
+      restart: on-failure
+      ports:
+        - "9003:9003"
+
+    client:
+      image: client
+      restart: on-failure
+      ports:
+        - "8080:8080"
